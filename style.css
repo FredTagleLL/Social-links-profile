@@ -1,0 +1,109 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: "Inter", sans-serif;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Grey-900);
+    font-size: 14px;
+}
+
+.container{
+    padding: 1.5rem 0;
+    border: 1px solid none;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 350px;
+    width: 90%;
+    min-width: 25vw;
+    height:auto;
+    background-color: var(--Grey-800);
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    width: 100%;
+    height: auto;
+}
+.contacto h1{
+    font-size: 26px;
+    color: var(--White);
+    font-weight: 700;
+    
+}
+.contacto h2{
+    font-size: 14px;
+    color: var(--Green);
+    font-weight: 700;
+    
+}
+.parrafo{
+    color: var(--White);
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+}
+.foto{
+    border-radius: 50%;
+    height:80px;
+    width: 80px;
+}
+.foto img{
+    width: 100%;
+    height: 100%;
+
+
+}
+.redes{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 1rem;
+}
+.redes__lista{
+    background-color: var(--Grey-700);
+    width: 80%;
+    padding: 0.8rem 0;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+.redes__link{
+    text-decoration: none;
+    color:var(--White);
+}
+.redes__lista:hover{
+    background-color: var(--Green);
+    
+}
+.redes__lista:hover .redes__link{
+    color: var(--Grey-900);
+}
+@media(max-width:375px){
+    .container{
+        width: 90%;
+    }
+    
+}
